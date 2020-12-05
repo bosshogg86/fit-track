@@ -40,6 +40,14 @@ workoutSchema.virtual("totalDuration").get(function () {
   return totalDuration;
 });
 
+// workoutSchema.virtual("numExercises").get(function () {
+//   let numExercises = 0;
+//   for (i = 0; i < exercises.length; i++) {
+//     numExercises += 1;
+//   }
+//   return numExercises;
+// });
+
 const Workout = mongoose.model("Workout", workoutSchema);
 
 module.exports = Workout;
